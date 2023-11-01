@@ -3,6 +3,7 @@ package com.example.pppbrecyclerview
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.pppbrecyclerview.databinding.ActivityMainBinding
 
@@ -19,6 +20,7 @@ class MainActivity : AppCompatActivity() {
             rvRestaurants.apply {
                 adapter = adapterRestaurant
                 layoutManager = LinearLayoutManager(this@MainActivity)
+                //layoutManager = GridLayoutManager(this@MainActivity, 2)
             }
         }
     }
